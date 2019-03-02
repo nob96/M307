@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+    <script src="index.js"></script>
+
+    <title>Final</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-container">
+        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue"
+                href="javascript:void(0);" onclick="toggleNavbar()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-white">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa fa-male"></i>
+                Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa fa-plane"></i>
+                Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa fa-car"></i>
+                Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><i class="fa fa-search"></i>
+                Link 4</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-male"></i> Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-plane"></i> Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-car"></i> Link 3</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-search"></i> Link 4</a>
+        </div>
+    </div>
+
+
+    <!--Main-->
+    <div class="w3-container">
+        <!--Banner-->
+        <div class="w3-row w3-center" id="banner">
+            <h2>M307</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <!--Table-->
+        <div class="w3-twothird w3-padding">
+            <h3>Tabelle</h3>
+            <!--Response msg-->
+            <div class="response-msg-table">
+                <p></p>
+            </div>
+            <table class="w3-table w3-responsive w3-striped" id="table">
+                <tbody>
+                    <tr>
+                        <th>Id</th>
+                        <th>Gerätename </th>
+                        <th>Inventarnummer </th>
+                        <th>Kategorie</th>
+                        <th>Kaufdatum</th>
+                        <th>Bemerkung</th>
+                        <th>Aktion</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Formular-->
+        <form class="w3-third w3-padding" id="formular">
+            <h3>Formular</h3>
+            <!--Response msg-->
+            <div class="response-msg-form">
+                <p></p>
+            </div>
+            <!--Geraetename-->
+            <label for="inventar_Geraetename-input">Gerätename*</label>
+            <input type="text" name="inventar_Geraetename-input" id="inventar_Geraetename-input" class="w3-input w3-border w3-round"
+                value="" required>
+            <br>
+            <!--Inventarnummer-->
+            <label for="inventar_Inventarnummer-input">Inventarnummer*</label>
+            <input type="text" name="inventar_Inventarnummer-input" id="inventar_Inventarnummer-input" class="w3-input w3-border w3-round"
+                value="" required>
+            <br>
+            <!--Dropdown Select-->
+            <label for="select-input">Kategorie*</label>
+            <select name="inventar_Kategorie-input" id="inventar_Kategorie-input" class="w3-input w3-border w3-round">
+                <option selected>Computer</option>
+                <option>Audio</option>
+                <option>Monitor</option>
+            </select>
+            <br>
+            <!--Kaufdatum-->
+            <label for="inventar_Kaufdatum-input">Kaufdatum</label>
+            <input type="date" class="w3-input w3-border w3-round" id="inventar_Kaufdatum-input" name="inventar_Kaufdatum-input"
+                value="">
+            <br>
+            <!--Bemerkung-->
+            <label for="inventar_Bemerkung-input">Bemerkung</label>
+            <input type="text" name="inventar_Bemerkung-input" id="inventar_Bemerkung-input" class="w3-input w3-border w3-round"
+                value="">
+            <br>
+            <!--Hidden Input for id-->
+            <input type="hidden" name="Id-input" id="Id-input" value="">
+            <input type="submit" id="save" value="Speichern" class="w3-btn w3-blue w3-round w3-border">
+            <a class="w3-btn w3-round w3-border w3-blue" onclick='clearForm("formular")'>Clear</a>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="w3-container w3-blue">
+        <h2>Footer</h2>
+    </div>
+
+    <!--Mustache template-table-->
+    <table>
+        <tbody id="template_table">
+            <tr id="{{Id}}">
+                <td>{{Id}}</td>
+                <td>{{inventar_Geraetename}}</td>
+                <td>{{inventar_Inventarnummer}}</td>
+                <td>{{inventar_Kategorie}}</td>
+                <td>{{inventar_Kaufdatum}}</td>
+                <td>{{inventar_Bemerkung}}</td>
+                <td><i class="fa fa-pencil w3-hover-blue w3-padding update" onclick="getById(this)"></i><i class="fa fa-trash w3-hover-red w3-padding delete"
+                        onclick="deleteItem(this)"></i></td>
+            </tr>
+        </tbody>
+        </div>
+    </table>
+</body>
+
+</html>

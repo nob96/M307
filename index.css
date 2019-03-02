@@ -1,0 +1,24 @@
+.w3-container{
+    padding: 0;
+}
+
+#banner{
+    background: url(bild.PNG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.table{
+    display: table;
+}
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+}
+
