@@ -3,7 +3,7 @@
 
 Anleitung:
 
-1. MySQL.php anpassen:
+1. MySQL.php anpassen.
 1.1 createDB() anpassen.
 1.2 Zeile 15 und 20 DB-Name anpassen (4ter Parameter vom mysqli-Konstruktor).
 2. DB erstellen lassen (automatisch) beim ersten Seitenaufruf.
