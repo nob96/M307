@@ -13,7 +13,7 @@ Anleitung:
 5. index.php::get() anpassen:
    - Testen
 6. Formular anpassen, alle Formular-Elemente in form.txt
-7. index.js::fillForm(), Zeile 90
+7. index.js::fillForm() anpassen
 8. index.php::validateForm() anpassen
    - Wenn ein Feld optional ist, zuerst prüfen ob Feld gefüllt und erst dann validieren (siehe Zeile 166/170)
 9. index.php::update() anpassen
