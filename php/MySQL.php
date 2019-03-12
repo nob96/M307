@@ -46,11 +46,7 @@ class MySQL {
      * @return bool
      */
     public function validate(){
-        if(($this->mysqliObj->affected_rows != -1 and strlen($this->mysqliObj->error) <= 0)){
-            return true;
-        }
-
-        return false;
+        return ($this->mysqliObj->affected_rows != -1 and strlen($this->mysqliObj->error) <= 0);
     }
 
     /** 
