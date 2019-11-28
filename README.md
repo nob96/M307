@@ -22,5 +22,8 @@ Anleitung:
     - Testen 
 11. index.php::delete() anpassen
     - Testen
+    
+# Update
+Note: 6.0
 
 
